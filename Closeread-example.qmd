@@ -1,0 +1,160 @@
+---
+title: "Closeread example"
+format: 
+  closeread-html:
+    embed-resources: true
+    remove-header-space: true
+---
+
+## Let's look at some Penguins!
+
+:::{.cr-section layout="overlay-center"}
+**Palmer Penguins** is a popular open dataset used for teaching data science and statistics, a new alternative to the classic `iris` dataset. @cr-penguins
+
+It contains morphological measurements of three penguin species observed in the Palmer Archipelago in Antarctica: @cr-penguins
+
+Adelie [@cr-penguins]{pan-to="-50%,-5%" scale-by="2"}
+
+Chinstrap [@cr-penguins]{pan-to="50%,-5%" scale-by="2"}
+
+and Gentoo [@cr-penguins]{pan-to="-0%,10%" scale-by="2"}
+
+Beautiful illustration by Allison Horst @cr-penguins
+
+:::{#cr-penguins}
+![](images/penguins.png)
+:::
+
+:::
+
+## How do I get the data?
+
+:::{.cr-section layout="sidebar-left"}
+The dataset is part of the `{palmerpenguins}` R package.
+
+You can install it like this: @cr-package
+
+But if you have the new version of `R 4.5`, it's now directly available! @cr-package
+
+:::{#cr-package}
+```r
+install.packages("palmerpenguins")
+```
+:::
+
+:::
+
+## Code Zoom Example
+
+:::{.cr-section layout="sidebar-right"}
+
+This is how you load libraries. [@cr-dplyr]{highlight="1-2"}
+
+This shows the first 5 rows of `penguins`. [@cr-dplyr]{highlight="3"}
+
+This calculates summary statistics. [@cr-dplyr]{highlight="4-6"}
+
+But it looks a bit tiny, right?
+
+That's better! [@cr-dplyr]{zoom-to="1"}
+
+:::{#cr-dplyr}
+```r
+library(dplyr)
+library(palmerpenguins)
+head(penguins)
+penguins %>% 
+  group_by(island) %>% 
+  summarize(avg_bill_length = mean(bill_length_mm))
+```
+:::
+
+:::
+
+## Plots and Penguins!
+
+:::{.cr-section layout="sidebar-left"}
+
+Let’s take a look at some data! We’ll explore how different penguin species vary in size using a simple scatter plot. 
+
+We will now see a plot in which the x-axis shows *flipper length* in millimeters, and the y-axis shows *body mass* in grams. Each point will represent a penguin. @cr-empty-plot
+
+Have a look at the **Gentoo**. They generally have larger flippers and higher body mass, and their measurements barely overlap with the other two species. @cr-gentoo
+
+Now let's look at **Adelie** and **Chinstrap** penguins. These two species overlap almost completely in both traits, making them harder to distinguish using just body size. @cr-otherpenguins
+
+:::{#cr-empty-plot}
+```{r out.width="100%", warning=FALSE}
+
+library(ggplot2)
+library(palmerpenguins)
+ggplot(data = penguins, 
+                       aes(x = flipper_length_mm,
+                           y = body_mass_g)) +
+  labs(title = "Penguin size, Palmer Station LTER",
+       subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
+       x = "Flipper length (mm)",
+       y = "Body mass (g)",
+       color = "Penguin species",
+       shape = NULL) +
+  theme(legend.position.inside = c(0.2, 0.7),
+        plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot")
+
+```
+:::
+
+:::{#cr-gentoo}
+```{r out.width="100%", warning=FALSE}
+
+library(ggplot2)
+library(palmerpenguins)
+ggplot(data = penguins, 
+                       aes(x = flipper_length_mm,
+                           y = body_mass_g)) +
+  geom_point(aes(color = species, shape = species, alpha = species), size = 3) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  scale_alpha_manual(values = c("Adelie" = 0.3, "Chinstrap" = 0.3, "Gentoo" = 1)) +
+  guides(shape = "none", alpha = "none") + 
+  labs(title = "Penguin size, Palmer Station LTER",
+       subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
+       x = "Flipper length (mm)",
+       y = "Body mass (g)",
+       color = "Penguin species",
+       shape = NULL) +
+  theme(legend.position.inside = c(0.2, 0.7),
+        plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot")
+
+```
+:::
+
+:::{#cr-otherpenguins}
+```{r out.width="100%", warning=FALSE}
+
+library(ggplot2)
+library(palmerpenguins)
+ggplot(data = penguins, 
+                       aes(x = flipper_length_mm,
+                           y = body_mass_g)) +
+  geom_point(aes(color = species, shape = species, alpha = species), size = 3) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  scale_alpha_manual(values = c("Adelie" = 1, "Chinstrap" = 1, "Gentoo" = 0.3)) +
+  guides(shape = "none", alpha = "none") + 
+  labs(title = "Penguin size, Palmer Station LTER",
+       subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
+       x = "Flipper length (mm)",
+       y = "Body mass (g)",
+       color = "Penguin species") +
+  theme(legend.position.inside = c(0.2, 0.7),
+        
+        plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot")
+
+```
+:::
+
+:::

@@ -1,0 +1,155 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-family: "Lexend Deca", sans-serif;
+
+// R-Ladies branding colors
+$rl-purple: #88398a;
+$rl-lightgray: #d3d3d3;
+$rl-darkpurple: #562457;
+$rl-complement: #3B8A39;
+$rl-white: #ffffff;
+
+$accent-pink: #f2cee6;
+$accent-comp: #CEF2DA;
+$accent-darkgray: #444;
+
+$body-bg: $rl-white;
+$body-color: $rl-darkpurple;
+$link-color: $rl-purple;
+
+/*-- scss:rules --*/
+
+.reveal {
+  font-family: $font-family;
+  background-color: $body-bg;
+  color: $body-color;
+
+  a {
+    color: $rl-purple;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $rl-complement;
+      text-decoration: underline;
+    }
+  }
+
+  h1, h2, h3 {
+    font-family: $font-family;
+    color: $rl-purple;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.2em; }
+
+  p, li {
+    font-weight: 300;
+    font-size: 0.9em;
+  }
+
+  li {
+    font-weight: 350;
+  }
+
+  table {
+    font-size: 0.8em; 
+    margin: 1em auto;
+    width: auto;
+    max-width: 90%;  
+    border-collapse: collapse; 
+    display: table;
+  }
+
+  th, td {
+    border: 1px solid $rl-lightgray;
+    padding: 0.4em 0.6em;
+    text-align: left;
+    font-size: 0.85em;
+  }
+}
+
+.reveal .centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 100%;
+}
+
+.no-fragment .fragment {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.about-me {
+  margin-top: 50px;
+  vertical-align: middle;
+  gap: 40px;
+}
+
+.about-me-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid $rl-purple;
+}
+
+.about-me-text {
+  flex: 1 1 300px;
+  font-size: 1em;
+}
+
+.reveal .miditext {
+  font-size: 0.8em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-size: 1.4em;
+
+  a {
+    margin: 0 15px;
+    color: $accent-pink;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $accent-comp;
+    }
+  }
+}
+
+/*--- Title slide animated background ---*/
+
+.title-slide {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url("images/title-slide.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: scrollBounce 40s ease-in-out infinite;
+    z-index: 0;
+  }
+}
+
+@keyframes scrollBounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
