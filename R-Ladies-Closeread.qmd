@@ -174,7 +174,7 @@ Good news: You don’t need to write any JavaScript yourself, it all works with 
 :::
 
 ::: {.column width="50%"}
-[**Quarto** For the rescue!]{.miditext}
+[**Quarto** for the rescue!]{.miditext}
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW13dXZranR4YzEzaG1na3k1bmlnYWhoNjRxZGVycTU3ZWFmM2V5NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IwAZ6dvvvaTtdI8SD5/giphy.gif)
 
 :::
@@ -299,8 +299,10 @@ Posit, the company behind tools many of us in the R community use every day, lik
 ::: {.column width="40%"}
 
 - [Closeread Challenge by Posit](https://posit.co/blog/closeread-prize-winners/)
+- [Women are not allowed pockets](https://pudding.cool/2018/08/pockets/)
+- [Life after Death on Wikepedia](https://pudding.cool/2018/08/wiki-death/)
 - [My own website](https://cecibaldoni.github.io/projects.html)
-- [A template for today!](ADD LINK)
+- [A template for today!](https://github.com/cecibaldoni/scrollytelling-quarto-closeread)
 :::
 :::
 
@@ -308,7 +310,7 @@ Posit, the company behind tools many of us in the R community use every day, lik
 
 What you will need: 
 
-- Text editor or IDE (Rstudio, VSCode, Jupyter)
+- Text editor or IDE (e.g. Rstudio, VSCode, Jupyter)
 - [Quarto](https://quarto.org/docs/get-started/) installed (minimum version 1.4)
 - Quarto document 
 - Initialize Closeread
@@ -491,4 +493,3 @@ Closeread comes
 [Closeread Documentation](https://closeread.dev/)<br>
 [Cecilia Baldoni - Closeread + Quarto Page](https://cecibaldoni.github.io/projects.html) <br>
 [Github file for Closeread of my website](https://github.com/cecibaldoni/cecibaldoni.github.io/blob/main/projects.qmd)<br>
-[]()
