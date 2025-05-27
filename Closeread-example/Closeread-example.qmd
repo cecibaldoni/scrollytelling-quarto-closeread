@@ -13,9 +13,9 @@ format:
 
 It contains morphological measurements of three penguin species observed in the Palmer Archipelago in Antarctica: @cr-penguins
 
-Adelie [@cr-penguins]{pan-to="-50%,-5%" scale-by="2"}
+Adelie [@cr-penguins]{pan-to="-50%,5%"  scale-by="2"}
 
-Chinstrap [@cr-penguins]{pan-to="50%,-5%" scale-by="2"}
+Chinstrap [@cr-penguins]{pan-to="50%,5%" scale-by="2"}
 
 and Gentoo [@cr-penguins]{pan-to="-0%,10%" scale-by="2"}
 
@@ -25,7 +25,10 @@ Beautiful illustration by Allison Horst @cr-penguins
 ![](images/penguins.png)
 :::
 
+
 :::
+
+
 
 ## How do I get the data?
 
@@ -91,7 +94,7 @@ library(palmerpenguins)
 ggplot(data = penguins, 
                        aes(x = flipper_length_mm,
                            y = body_mass_g)) +
-  labs(title = "Penguin size, Palmer Station LTER",
+  labs(title = "Penguin size, Palmer Station",
        subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
        x = "Flipper length (mm)",
        y = "Body mass (g)",
@@ -117,7 +120,7 @@ ggplot(data = penguins,
   scale_color_manual(values = c("darkorange","purple","cyan4")) +
   scale_alpha_manual(values = c("Adelie" = 0.3, "Chinstrap" = 0.3, "Gentoo" = 1)) +
   guides(shape = "none", alpha = "none") + 
-  labs(title = "Penguin size, Palmer Station LTER",
+  labs(title = "Penguin size, Palmer Station",
        subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
        x = "Flipper length (mm)",
        y = "Body mass (g)",
@@ -143,7 +146,7 @@ ggplot(data = penguins,
   scale_color_manual(values = c("darkorange","purple","cyan4")) +
   scale_alpha_manual(values = c("Adelie" = 1, "Chinstrap" = 1, "Gentoo" = 0.3)) +
   guides(shape = "none", alpha = "none") + 
-  labs(title = "Penguin size, Palmer Station LTER",
+  labs(title = "Penguin size, Palmer Station",
        subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
        x = "Flipper length (mm)",
        y = "Body mass (g)",

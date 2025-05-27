@@ -20,9 +20,8 @@ format:
 3. How it works
 4. Live Tour of Closeread examples
 5. Design and Customization
-6. Limitations
-7. Resources 
-8. Q&A
+6. Resources 
+7. Q&A
 
 ## About me
 
@@ -59,19 +58,20 @@ format:
 
 :::
 
-<br>
 
-::: {.fragment}
+::: {.fragment .centered}
 **It’s engaging, and great for communicating complex ideas**
 :::
+
+<br>
 
 ::: {.fragment}
 Examples:
 <br>
 - [Snowfall](https://www.nytimes.com/projects/2012/snow-fall/index.html#/?part=tunnel-creek) <br>
-- [The Millions Who Left](https://www.zeit.de/politik/deutschland/2019-05/east-west-exodus-migration-east-germany-demography)
-- [Women are not allowed pockets](https://pudding.cool/2018/08/pockets/)
-- [Life after Death on Wikepedia](https://pudding.cool/2018/08/wiki-death/)
+- [The Millions Who Left](https://www.zeit.de/politik/deutschland/2019-05/east-west-exodus-migration-east-germany-demography) <br>
+- [Women are not allowed pockets](https://pudding.cool/2018/08/pockets/) <br>
+- [Life after Death on Wikipedia](https://pudding.cool/2018/08/wiki-death/)
 :::
 
 
@@ -368,10 +368,11 @@ It's defined using an identifier like `#image1` or `#image2`
 ```markdown
 :::{.cr-section layout="overlay-center"}
 Your text goes here.
-:::
 
 :::{#image1}
 ![](img/image1.jpg)
+:::
+
 :::
 ```
 
@@ -386,15 +387,16 @@ Example:
 ```markdown
 :::{.cr-section layout="overlay-center"}
 Your text goes here. @image1
-:::
 
 :::{#image1}
 ![](img/image1.jpg)
 :::
+
+:::
 ```
 
 ::: notes
-Any element that is not a sticky element is placed in the narrative part. Tou can trigger the use of a sticky element with the @ handle
+Any element that is not a sticky element is placed in the narrative part. You can trigger the use of a sticky element with the @ handle
 :::
 
 ## Closeread Elements {auto-animate=true #elements3}
@@ -483,7 +485,7 @@ Closeread comes
 
 - A YAML block using `format: closeread-html` to enable Closeread  
 - One or more `.cr-section` blocks to define each scrollytelling scene  
-- Sticky elements (images, plots, or custom HTML) inside `::{#id}` blocks  
+- Sticky elements (images, plots) inside `:::{#id}` blocks  
 - Triggers (`@id`) in your narrative text to control what’s shown  
 - Optional effects: `scale-by`, `pan-to`, `highlight`, etc.
 
@@ -493,3 +495,5 @@ Closeread comes
 [Closeread Documentation](https://closeread.dev/)<br>
 [Cecilia Baldoni - Closeread + Quarto Page](https://cecibaldoni.github.io/projects.html) <br>
 [Github file for Closeread of my website](https://github.com/cecibaldoni/cecibaldoni.github.io/blob/main/projects.qmd)<br>
+
+## {#EndSlide background-image="images/end-slide.png"}
