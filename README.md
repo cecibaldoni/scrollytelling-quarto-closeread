@@ -53,7 +53,7 @@ quarto add qmd-lab/closeread
 ## About me
 
 **Cecilia Baldoni**  
-Postdoctoral researcher · Behavioral ecologist · Visual explainer
+Postdoctoral researcher · Behavioral ecologist · Visual doodler
 
 Connect with me:  
 [GitHub](https://github.com/cecibaldoni) · [LinkedIn](https://www.linkedin.com/in/cecilia-baldoni/) · [Website](https://cecibaldoni.github.io/)
