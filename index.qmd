@@ -58,13 +58,6 @@ format:
 
 :::
 
-
-::: {.fragment .centered}
-**It’s engaging, and great for communicating complex ideas**
-:::
-
-<br>
-
 ::: {.fragment}
 Examples:
 <br>

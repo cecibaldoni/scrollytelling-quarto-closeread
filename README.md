@@ -1,9 +1,3 @@
----
-title: "README"
-author: "Cecilia Baldoni"
-date: "2025-05-28"
-output: html_document
----
 
 ## Scrollytelling Science with Quarto and Closeread
 
