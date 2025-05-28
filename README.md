@@ -30,7 +30,7 @@ You can view the slides at this [link](https://cecibaldoni.github.io/scrollytell
 ## Requirements
 
 - [Quarto](https://quarto.org)
-- [R](https://www.r-project.org) and an IDE (e.g. [RStudio](https://posit.co))
+- A text editor or IDE (e.g. [RStudio](https://posit.co))
 
 ## Try the Closeread example
 
@@ -59,7 +59,7 @@ Connect with me:
 [GitHub](https://github.com/cecibaldoni) · [LinkedIn](https://www.linkedin.com/in/cecilia-baldoni/) · [Website](https://cecibaldoni.github.io/)
 
 
-## 📜 License
+## License
 
 MIT License – free to use, fork, and adapt.
 Please credit if you reuse or build upon the slides or example!
