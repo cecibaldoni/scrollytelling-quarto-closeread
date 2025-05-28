@@ -1,8 +1,6 @@
-
 ## Scrollytelling Science with Quarto and Closeread
 
-This repo contains everything used in my R-Ladies presentation **"Scrollytelling Science with Quarto and Closeread"**,
-including the slides and a working Closeread example you can fork and modify for your own projects.
+This repo contains everything used in my R-Ladies presentation **"Scrollytelling Science with Quarto and Closeread"**, including the slides and a working Closeread example you can fork and modify for your own projects.
 
 ------------------------------------------------------------------------
 
@@ -27,10 +25,14 @@ R-Ladies-Closeread/
 
 You can view the slides at this [link](https://cecibaldoni.github.io/scrollytelling-quarto-closeread/#/TitleSlide); if you prefer, you can open `index.html` in your browser (or build from `index.qmd`).
 
+## Cheatsheet
+
+![](images/cheatsheet-closeread.png)
+
 ## Requirements
 
-- [Quarto](https://quarto.org)
-- A text editor or IDE (e.g. [RStudio](https://posit.co))
+-   [Quarto](https://quarto.org)
+-   A text editor or IDE (e.g. [RStudio](https://posit.co))
 
 ## Try the Closeread example
 
@@ -46,20 +48,18 @@ quarto add qmd-lab/closeread
 
 ## More
 
-- My Closeread webpage: **[Cecilia Baldoni - Projects](https://cecibaldoni.github.io/projects.html)**  
-- Closeread documentation: **[Closeread](https://closeread.dev/)**  
-- Presentation hosted on Github: **[Slides](https://cecibaldoni.github.io/scrollytelling-quarto-closeread/#/TitleSlide)**
+-   My Closeread webpage: [**Cecilia Baldoni - Projects**](https://cecibaldoni.github.io/projects.html)\
+-   Closeread documentation: [**Closeread**](https://closeread.dev/)\
+-   Presentation hosted on Github: [**Slides**](https://cecibaldoni.github.io/scrollytelling-quarto-closeread/#/TitleSlide)
 
 ## About me
 
-**Cecilia Baldoni**  
+**Cecilia Baldoni**\
 Postdoctoral researcher · Behavioral ecologist · Visual doodler
 
-Connect with me:  
+Connect with me:\
 [GitHub](https://github.com/cecibaldoni) · [LinkedIn](https://www.linkedin.com/in/cecilia-baldoni/) · [Website](https://cecibaldoni.github.io/)
-
 
 ## License
 
-MIT License – free to use, fork, and adapt.
-Please credit if you reuse or build upon the slides or example!
+MIT License – free to use, fork, and adapt. Please credit if you reuse or build upon the slides or example!
