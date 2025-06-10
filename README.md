@@ -48,9 +48,10 @@ quarto add qmd-lab/closeread
 
 ## More
 
--   My Closeread webpage: [**Cecilia Baldoni - Projects**](https://cecibaldoni.github.io/projects.html)\
--   Closeread documentation: [**Closeread**](https://closeread.dev/)\
+-   My Closeread webpage: [**Cecilia Baldoni - Projects**](https://cecibaldoni.github.io/projects.html)
+-   Closeread documentation: [**Closeread**](https://closeread.dev/)
 -   Presentation hosted on Github: [**Slides**](https://cecibaldoni.github.io/scrollytelling-quarto-closeread/#/TitleSlide)
+-   Blogpost I wrote on the talk I gave: [**Blogpost**](https://cecibaldoni.github.io/blog/2025-05-31-cr.html)
 
 ## About me
 
